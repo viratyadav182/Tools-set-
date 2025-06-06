@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>8 Handy Productivity Tools | Free Online Utilities</title>
+  <meta name="description" content="Access 8 essential online tools: Age Calculator, QR Code Generator, Unit Converter, Calculator, Password Generator, Currency Converter, Text to Speech, and Online Notepad. Responsive and SEO optimized." />
+  <meta name="keywords" content="online tools, age calculator, qr code generator, unit converter, calculator, password generator, currency converter, text to speech, notepad" />
+  <meta name="author" content="YourName" />
+  <link rel="canonical" href="https://yourwebsite.com/" />
+  
+  <!-- Open Graph for social sharing -->
+  <meta property="og:title" content="8 Handy Productivity Tools | Free Online Utilities" />
+  <meta property="og:description" content="8 essential online tools including Age Calculator, QR Code Generator, and more. Fully responsive and SEO optimized." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourwebsite.com/" />
+  <meta property="og:image" content="https://yourwebsite.com/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="8 Handy Productivity Tools | Free Online Utilities" />
+  <meta name="twitter:description" content="Access 8 essential online tools: Age Calculator, QR Code Generator, Unit Converter, Calculator, Password Generator, Currency Converter, Text to Speech, and Online Notepad." />
+  <meta name="twitter:image" content="https://yourwebsite.com/og-image.png" />
+
+  <style>
+    /* Reset & base */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0; 
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f8fafc;
+      color: #212529;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem 1.5rem 2rem;
+      line-height: 1.5;
+    }
+    a {
+      color: #0d6efd;
+      text-decoration: none;
+    }
+    a:hover, a:focus {
+      text-decoration: underline;
+    }
+    h1 {
+      margin-bottom: 0.5rem;
+      font-weight: 900;
+      font-size: 2.2rem;
+      color: #1c2331;
+      text-align: center;
+    }
+    h2 {
+      margin-top: 0;
+      color: #34495e;
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+    p.subtitle {
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
+      color: #5a6772;
+      text-align: center;
+    }
+    .container {
+      max-width: 980px;
+      width: 100%;
+      background: white;
+      padding: 2rem 2.5rem;
+      border-radius: 14px;
+      box-shadow: 0 12px 30px rgb(0 0 0 / 0.08);
+      display: flex;
+      flex-direction: row;
+      gap: 1.8rem;
+    }
+    main.tools {
+      flex: 3;
+    }
+    aside.sidebar {
+      flex: 1;
+      position: sticky;
+      top: 1.5rem;
+      height: fit-content;
+      border-left: 2px solid #e1e7eb;
+      padding-left: 1.5rem;
+    }
+
+    .tool {
+      border-bottom: 1px solid #e1e7eb;
+      padding-bottom: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .tool:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    label {
+      font-weight: 600;
+      display: block;
+      margin: 0.5rem 0 0.3rem;
+      color: #34495e;
+    }
+    input, select, button, textarea {
+      font-size: 1rem;
+      padding: 0.45rem 0.65rem;
+      margin: 0 0 0.8rem 0;
+      width: 100%;
+      border: 1.8px solid #ced4da;
+      border-radius: 6px;
+      transition: border-color 0.25s ease;
+      font-family: inherit;
+      font-weight: 400;
+      background: #fafbfc;
+      color: #212529;
+      resize: vertical;
+    }
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: #0d6efd;
+      box-shadow: 0 0 8px rgba(13, 110, 253, 0.35);
+      background: #fff;
+    }
+    button {
+      cursor: pointer;
+      background: #0d6efd;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 0.6rem 1rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      box-shadow: 0 5px 12px rgba(13, 110, 253, 0.3);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      width: auto;
+      display: inline-block;
+    }
+    button:hover, button:focus {
+      background: #0056b3;
+      box-shadow: 0 6px 18px rgba(0, 86, 179, 0.5);
+    }
+    .result {
+      background: #e9ecef;
+      padding: 0.7rem 1rem;
+      border-radius: 8px;
+      font-weight: 600;
+      user-select: all;
+      white-space: pre-wrap;
+      min-height: 1.5em;
+      color: #212529;
+      border: 1px solid #ced4da;
+    }
+    textarea {
+      min-height: 100px;
+      line-height: 1.4;
+    }
+
+    /* Ad placeholders */
+    .ad-space {
+      background: #f1f3f5;
+      border: 2px dashed #ced4da;
+      border-radius: 12px;
+      padding: 0.75rem;
+      color: #868e96;
+      text-align: center;
+      font-style: italic;
+      margin-bottom: 1.6rem;
+      user-select: none;
+    }
+    .ad-space small {
+      display: block;
+      margin-top: 0.3rem;
+      font-size: 0.85rem;
+      color: #adb5bd;
+    }
+
+    /* Responsive */
+    @media (max-width: 850px) {
+      .container {
+        flex-direction: column;
+        padding: 1.5rem 1.5rem 2rem;
+      }
+      aside.sidebar {
+        border-left: none;
+        border-top: 2px solid #e1e7eb;
+        margin-top: 2rem;
+        padding-left: 0;
+        padding-top: 1rem;
+        position: static;
+        height: auto;
+      }
+    }
+    @media (max-width: 420px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      h2 {
+        font-size: 1.25rem;
+      }
+      button {
+        font-size: 0.95rem;
+        padding: 0.5rem 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>8 Handy Productivity Tools</h1>
+    <p class="subtitle">Free online utilities: Age Calculator, QR Code Generator, Unit Converter, Calculator, Password Generator, Currency Converter, Text to Speech & Notepad.</p>
+
+    <!-- Top Banner Ad Placeholder -->
+    <div class="ad-space" aria-label="Top Banner Advertisement">
+      <!-- Replace below with your Google AdSense ad code -->
+      <!--
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+           data-ad-slot="YYYYYYYYYY"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+      -->
+      Top Banner Advertisement<br />
+      <small>Insert your AdSense code here</small>
+    </div>
+  </header>
+
+  <div class="container" role="main">
+    <main class="tools" aria-label="Primary Tools Section">
+
+      <!-- Tool 1: Age Calculator -->
+      <section class="tool" id="ageCalc" aria-labelledby="ageCalcTitle" role="region">
+        <h2 id="ageCalcTitle">Age Calculator</h2>
+        <label for="dob">Enter your Date of Birth:</label>
+        <input type="date" id="dob" max="" aria-describedby="ageDesc" />
+        <button type="button" onclick="calculateAge()">Calculate Age</button>
+        <div class="result" id="ageResult" aria-live="polite" aria-atomic="true"></div>
+      </section>
+
+      <!-- Ad after Tool 1 -->
+      <div class="ad-space" aria-label="Advertisement after Age Calculator">
+        <!-- Google AdSense code here -->
+        Ad Space #1<br />
+        <small>Insert your AdSense code here</small>
+      </div>
+
+      <!-- Tool 2: QR Code Generator -->
+      <section class="tool" id="qrGen" aria-labelledby="qrGenTitle" role="region">
+        <h2 id="qrGenTitle">QR Code Generator</h2>
+        <label for="qrText">Enter Text or URL:</label>
+        <input type="text" id="qrText" placeholder="https://example.com" aria-describedby="qrDesc" />
+        <button type="button" onclick="generateQRCode()">Generate QR Code</button>
+        <div id="qrCode" style="margin-top:12px;" aria-live="polite" aria-atomic="true"></div>
+      </section>
+
+      <!-- Tool 3: Unit Converter -->
+      <section class="tool" id="unitConv" aria-labelledby="unitConvTitle" role="region">
+        <h2 id="unitConvTitle">Unit Converter</h2>
+        <label for="unitType">Select Unit Type:</label>
+        <select id="unitType" onchange="populateUnits()" aria-describedby="unitTypeDesc">
+          <option value="length">Length</option>
+          <option value="weight">Weight</option>
+        </select>
+        <label for="unitFrom">From:</label>
+        <select id="unitFrom" aria-describedby="unitFromDesc"></select>
+        <label for="unitTo">To:</label>
+        <select id="unitTo" aria-describedby="unitToDesc"></select>
+        <label for="unitValue">Value:</label>
+        <input type="number" id="unitValue" placeholder="Enter value" />
+        <button type="button" onclick="convertUnits()">Convert</button>
+        <div class="result" id="unitResult" aria-live="polite" aria-atomic="true"></div>
+      </section>
+
+      <!-- Tool 4: Basic Calculator -->
+      <section class="tool" id="basicCalc" aria-labelledby="basicCalcTitle" role="region">
+        <h2 id="basicCalcTitle">Basic Calculator</h2>
+        <input type="text" id="calcInput" placeholder="e.g. 5+4*2" aria-describedby="calcInputDesc" />
+        <button type="button" onclick="calculateExpression()">Calculate</button>
+        <div class="result" id="calcResult" aria-live="polite" aria-atomic="true"></div>
+      </section>
+
+      <!-- Ad after Tool 4 -->
+      <div class="ad-space" aria-label="Advertisement after Calculator">
+        <!-- Google AdSense code here -->
+        Ad Space #2<br />
+        <small>Insert your AdSense code here</small>
+      </div>
+
+      <!-- Tool 5: Password Generator -->
+      <section class="tool" id="passGen" aria-labelledby="passGenTitle" role="region">
+        <h2 id="passGenTitle">Password Generator</h2>
+        <label for="passLength">Length:</label>
+        <input type="number" id="passLength" value="12" min="4" max="64" />
+        <label><input type="checkbox" id="passUppercase" checked /> Include Uppercase</label>
+        <label><input type="checkbox" id="passNumbers" checked /> Include Numbers</label>
+        <label><input type="checkbox" id="passSymbols" /> Include Symbols</label>
+        <button type="button" onclick="generatePassword()">Generate Password</button>
+        <input type="text" readonly id="passOutput" aria-label="Generated password" />
+      </section>
+
+      <!-- Tool 6: Currency Converter -->
+      <section class="tool" id="currencyConv" aria-labelledby="currencyConvTitle" role="region">
+        <h2 id="currencyConvTitle">Currency Converter</h2>
+        <label for="currencyFrom">From (currency code):</label>
+        <input type="text" id="currencyFrom" value="USD" maxlength="3" aria-describedby="currencyFromDesc" />
+        <label for="currencyTo">To (currency code):</label>
+        <input type="text" id="currencyTo" value="INR" maxlength="3" aria-describedby="currencyToDesc" />
+        <label for="currencyAmount">Amount:</label>
+        <input type="number" id="currencyAmount" value="1" min="0" step="any" />
+        <button type="button" onclick="convertCurrency()">Convert</button>
+        <div class="result" id="currencyResult" aria-live="polite" aria-atomic="true"></div>
+      </section>
+
+      <!-- Tool 7: Text to Speech -->
+      <section class="tool" id="tts" aria-labelledby="ttsTitle" role="region">
+        <h2 id="ttsTitle">Text to Speech</h2>
+        <textarea id="ttsText" placeholder="Enter text to speak..." aria-label="Text to be read aloud"></textarea>
+        <button type="button" onclick="speakText()">Speak</button>
+        <div class="result" id="ttsStatus" aria-live="polite" aria-atomic="true"></div>
+      </section>
+
+      <!-- Tool 8: Online Notepad -->
+      <section class="tool" id="notepad" aria-labelledby="notepadTitle" role="region">
+        <h2 id="notepadTitle">Online Notepad</h2>
+        <textarea id="notepadText" placeholder="Write notes here..." aria-label="Online notepad text area"></textarea>
+        <button type="button" onclick="saveNote()">Save Note</button>
+        <button type="button" onclick="loadNote()">Load Note</button>
+        <button type="button" onclick="clearNote()">Clear Note</button>
+        <div class="result" id="notepadStatus" aria-live="polite" aria-atomic="true"></div>
+      </section>
+    </main>
+
+    <aside class="sidebar" aria-label="Sidebar Advertisement and Info">
+      <div class="ad-space" aria-label="Sidebar Advertisement">
+        <!-- Google AdSense Sidebar Ad Code -->
+        Ad Space Sidebar<br />
+        <small>Insert your AdSense code here</small>
+      </div>
+
+      <section>
+        <h2>About These Tools</h2>
+        <p>These 8 handy tools are designed to boost your productivity and help you perform common daily tasks quickly, all from your browser.</p>
+        <p>Feel free to share and bookmark this page for quick access.</p>
+      </section>
+    </aside>
+  </div>
+
+  <!-- QRCode.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+
+  <script>
+    // Set max date for DOB input as today
+    document.getElementById('dob').max = new Date().toISOString().split('T')[0];
+
+    // Age Calculator
+    function calculateAge() {
+      const dob = document.getElementById('dob').value;
+      const res = document.getElementById('ageResult');
+      if (!dob) {
+        res.textContent = 'Please select your date of birth.';
+        return;
+      }
+      const birthDate = new Date(dob);
+      const today = new Date();
+      if (birthDate > today) {
+        res.textContent = 'Date of birth cannot be in the future.';
+        return;
+      }
+      let years = today.getFullYear() - birthDate.getFullYear();
+      let months = today.getMonth() - birthDate.getMonth();
+      let days = today.getDate() - birthDate.getDate();
+
+      if (days < 0) {
+        months--;
+        days += new Date(today.getFullYear(), today.getMonth(), 0).getDate();
+      }
+      if (months < 0) {
+        years--;
+        months += 12;
+      }
+      res.textContent = `Age: ${years} years, ${months} months, and ${days} days.`;
+    }
+
+    // QR Code Generator
+    function generateQRCode() {
+      const text = document.getElementById('qrText').value.trim();
+      const container = document.getElementById('qrCode');
+      container.innerHTML = '';
+      if (!text) {
+        container.textContent = 'Please enter text or URL.';
+        return;
+      }
+      QRCode.toCanvas(text, { width: 160 }, function (error, canvas) {
+        if (error) {
+          container.textContent = 'Error generating QR code.';
+          return;
+        }
+        container.appendChild(canvas);
+      });
+    }
+
+    // Unit
